@@ -1,0 +1,10 @@
+<html lang="en">
+<body>
+    <h1>Issue Book - {{ book.title }}</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Issue Book</button>
+    </form>
+</body>
+</html>
